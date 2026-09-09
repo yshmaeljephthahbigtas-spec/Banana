@@ -1,0 +1,22 @@
+/* =========================================
+   BANANA WEBSITE STYLES
+
+   EASY EDIT GUIDE:
+   - Change background colors below
+   - Change text sizes below
+   - Add your own styles at the bottom
+========================================= */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Main welcome section */
+.hero-section {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+}
+
+/* Add your custom CSS below this line */
