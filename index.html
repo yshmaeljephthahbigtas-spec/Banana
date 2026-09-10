@@ -1,75 +1,162 @@
 <!--
-========================================
+====================================================
 REMINDERS
 
-- edit colors if needed
+- edit color scheme if needed
 - check my info
-- make sure profile.png is uploaded
+- check spelling before submit
+- make sure unnamed.jpg is uploaded
 - check github + linkedin
-- edit projects later
+- edit project links later if needed
 - test navbar
 - test on phone
 - turn on github pages
-========================================
+====================================================
 -->
 
 <!doctype html>
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
   <title>Yshmael Bigtas | Portfolio</title>
 
-  <!-- bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+
+  <!-- bootstrap icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  >
+
 </head>
 
 
 <body class="bg-dark text-white">
 
-  <!-- nav -->
+
+  <!-- ================= NAV ================= -->
+
   <header id="home">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-secondary">
 
       <div class="container">
 
-        <a class="navbar-brand text-warning fw-bold" href="#home">
+
+        <a
+          class="navbar-brand text-warning fw-bold"
+          href="#home">
+
           YJB
+
         </a>
+
 
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#nav">
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
 
           <span class="navbar-toggler-icon"></span>
 
         </button>
 
 
-        <div class="collapse navbar-collapse" id="nav">
+        <div
+          class="collapse navbar-collapse"
+          id="nav">
+
 
           <ul class="navbar-nav ms-auto">
 
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+
+              <a
+                class="nav-link"
+                href="#about">
+
+                <i class="bi bi-person"></i>
+                About
+
+              </a>
+
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Proj</a>
-            </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+
+              <a
+                class="nav-link"
+                href="#skills">
+
+                <i class="bi bi-tools"></i>
+                Skills
+
+              </a>
+
             </li>
+
+
+            <li class="nav-item">
+
+              <a
+                class="nav-link"
+                href="#projects">
+
+                <i class="bi bi-folder"></i>
+                Proj
+
+              </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+              <a
+                class="nav-link"
+                href="#experience">
+
+                <i class="bi bi-briefcase"></i>
+                Exp
+
+              </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+              <a
+                class="nav-link"
+                href="#contact">
+
+                <i class="bi bi-envelope"></i>
+                Contact
+
+              </a>
+
+            </li>
+
 
           </ul>
 
@@ -80,49 +167,102 @@ REMINDERS
     </nav>
 
 
-    <!-- intro -->
-    <section class="container py-5">
 
-      <div class="row align-items-center py-4">
+    <!-- ================= INTRO ================= -->
 
-        <div class="col-md-7">
+    <section class="min-vh-100 d-flex align-items-center">
 
-          <p class="text-warning">
-            Hi, I'm
-          </p>
+      <div class="container">
 
-          <h1 class="fw-bold">
-            Yshmael Jephthah Bigtas
-          </h1>
-
-          <h2 class="h5 text-secondary">
-            ICT Grad | College Student | Beginner Dev
-          </h2>
-
-          <p class="mt-3">
-            Im still learning programming and web development.
-            I know some basic Java, HTML, Bootstrap and basic
-            system development.
-          </p>
-
-          <a href="#projects" class="btn btn-warning me-2">
-            My Proj
-          </a>
-
-          <a href="#contact" class="btn btn-outline-light">
-            Contact
-          </a>
-
-        </div>
+        <div class="row align-items-center">
 
 
-        <div class="col-md-5 text-center mt-4 mt-md-0">
+          <div class="col-md-7">
 
-          <!-- remember: profile.png must be in the same folder -->
-          <img
-            src="unnamed.jpg"
-            class="img-fluid rounded-circle border border-warning border-3"
-            alt="Photo of Yshmael Jephthah Bigtas">
+
+            <span class="badge bg-warning text-dark mb-3">
+
+              <i class="bi bi-code-slash"></i>
+              Student Portfolio
+
+            </span>
+
+
+            <p class="text-warning fw-bold mb-2">
+
+              Hi, I'm
+
+            </p>
+
+
+            <h1 class="display-3 fw-bold">
+
+              Yshmael Jephthah
+              <span class="text-warning">
+                Bigtas
+              </span>
+
+            </h1>
+
+
+            <h2 class="h5 text-secondary mt-3">
+
+              ICT Grad | College Student | Beginner Dev
+
+            </h2>
+
+
+            <p class="lead mt-4">
+
+              I'm still learning programming and web development.
+              I know some basic Java, HTML, Bootstrap and basic
+              system development.
+
+            </p>
+
+
+            <div class="mt-4">
+
+
+              <a
+                href="#projects"
+                class="btn btn-warning me-2">
+
+                <i class="bi bi-folder2-open"></i>
+                My Proj
+
+              </a>
+
+
+              <a
+                href="#contact"
+                class="btn btn-outline-light">
+
+                <i class="bi bi-chat-dots"></i>
+                Contact
+
+              </a>
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col-md-5 text-center mt-5 mt-md-0">
+
+
+            <!-- remember: keep unnamed.jpg in same folder -->
+
+            <img
+              src="unnamed.jpg"
+              class="img-fluid rounded-circle border border-warning border-5 shadow"
+              alt="Photo of Yshmael Jephthah Bigtas">
+
+
+          </div>
+
 
         </div>
 
@@ -136,196 +276,78 @@ REMINDERS
 
   <main>
 
-    <!-- about -->
-    <section id="about" class="bg-black py-5">
 
-      <div class="container">
+    <!-- ================= ABOUT ================= -->
 
-        <p class="text-warning">
+    <section
+      id="about"
+      class="bg-black py-5">
+
+
+      <div class="container py-4">
+
+
+        <p class="text-warning fw-bold mb-2">
+
+          <i class="bi bi-person-circle"></i>
           ABOUT
+
         </p>
 
-        <h2>
+
+        <h2 class="display-6 fw-bold">
+
           About Me
+
         </h2>
 
-        <p class="mt-3">
-          My name is Yshmael Jephthah Bigtas.
-          I graduated from ACLC Antipolo and Currently
-          enrolled at De La Salle-College of Saint Benilde Antipolo.
-        </p>
 
-        <p>
-          I have some experience in making basic computer systems
-          and basic Java programs.
-        </p>
-
-        <p>
-          I also have work experience in delivery and construction.
-          These jobs helped me earn some income.
-        </p>
-
-        <p>
-          Im still learning and trying to improve my skills in
-          programming and web development.
-        </p>
-
-      </div>
-
-    </section>
+        <div class="row mt-4">
 
 
-
-    <!-- skills -->
-    <section id="skills" class="container py-5">
-
-      <p class="text-warning">
-        SKILLS
-      </p>
-
-      <h2>
-        My Toolkit
-      </h2>
-
-      <p>
-        Things I currently know:
-      </p>
+          <div class="col-lg-8">
 
 
-      <div class="mt-3">
+            <p class="lead">
 
-        <span class="badge bg-warning text-dark p-2 m-1">
-          Java
-        </span>
+              My name is Yshmael Jephthah Bigtas.
 
-        <span class="badge bg-secondary p-2 m-1">
-          MS Word
-        </span>
-
-        <span class="badge bg-warning text-dark p-2 m-1">
-          Basic Sys Dev
-        </span>
-
-        <span class="badge bg-secondary p-2 m-1">
-          HTML (Kinda)(WIP)
-        </span>
-
-        <span class="badge bg-warning text-dark p-2 m-1">
-          Bootstrap (Kinda)(WIP)
-        </span>
-
-        <span class="badge bg-secondary p-2 m-1">
-          GitHub (Kinda)(WIP)
-        </span>
-
-      </div>
-
-    </section>
+            </p>
 
 
+            <p>
 
-    <!-- projects -->
-    <section id="projects" class="bg-black py-5">
+              I graduated from ACLC Antipolo and I'm currently
+              enrolled at De La Salle-College of Saint Benilde
+              Antipolo.
 
-      <div class="container">
-
-        <p class="text-warning">
-          PROJ
-        </p>
-
-        <h2>
-          Projects & Achievements
-        </h2>
-
-        <p>
-          Some projects and things I've completed.
-        </p>
+            </p>
 
 
-        <div class="row g-3 mt-2">
+            <p>
+
+              I have some experience in making basic computer
+              systems and basic Java programs.
+
+            </p>
 
 
-          <!-- proj 1 -->
-          <div class="col-12 col-md-6 col-lg-4">
+            <p>
 
-            <div class="card bg-dark text-white border-secondary h-100">
+              I also have work experience in delivery and
+              construction. These jobs also helped me earn
+              some income and get real work experience.
 
-              <div class="card-body">
-
-                <h3 class="h5 text-warning">
-                  Inventory Sys
-                </h3>
-
-                <p>
-                  A basic inventory system I made For my
-                  finals in ACLC.
-                </p>
-
-                <!-- edit link later -->
-                <a href="#" class="btn btn-warning">
-                  View
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
+            </p>
 
 
+            <p>
 
-          <!-- proj 2 -->
-          <div class="col-12 col-md-6 col-lg-4">
+              I'm still learning and trying to improve my skills
+              in programming and web development.
 
-            <div class="card bg-dark text-white border-secondary h-100">
+            </p>
 
-              <div class="card-body">
-
-                <h3 class="h5 text-warning">
-                  Java Activities
-                </h3>
-
-                <p>
-                  Some basic Java programs and coding activities
-                  that I made while learning Java.
-                </p>
-
-                <!-- edit link later -->
-                <a href="#" class="btn btn-warning">
-                  View
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <!-- proj 3 -->
-          <div class="col-12 col-md-6 col-lg-4">
-
-            <div class="card bg-dark text-white border-secondary h-100">
-
-              <div class="card-body">
-
-                <h3 class="h5 text-warning">
-                  ACLC Grad
-                </h3>
-
-                <p>
-                  I graduated from ACLC Antipolo where I learned
-                  basic ICT and computer skills.
-                </p>
-
-                <a href="#" class="btn btn-warning">
-                  View
-                </a>
-
-              </div>
-
-            </div>
 
           </div>
 
@@ -337,173 +359,632 @@ REMINDERS
 
 
 
-    <!-- exp -->
-    <section class="container py-5">
+    <!-- ================= SKILLS ================= -->
 
-      <p class="text-warning">
-        EXP
-      </p>
-
-      <h2>
-        Work Exp
-      </h2>
+    <section
+      id="skills"
+      class="container py-5">
 
 
-      <div class="row g-3 mt-2">
+      <div class="py-4">
 
 
-        <div class="col-md-6">
+        <p class="text-warning fw-bold mb-2">
 
-          <div class="card bg-dark text-white border-secondary h-100">
+          <i class="bi bi-tools"></i>
+          SKILLS
 
-            <div class="card-body">
-
-              <h3 class="h5 text-warning">
-                Delivery
-              </h3>
-
-              <p>
-                I have experience doing delivery work.
-                Its how i help our family buisness and earn xtra moeny.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="col-md-6">
-
-          <div class="card bg-dark text-white border-secondary h-100">
-
-            <div class="card-body">
-
-              <h3 class="h5 text-warning">
-                Construction
-              </h3>
-
-              <p>
-                Am a truck helper (Pahinante ng truck)
-                for a year doing construction work for my Lola.
-                
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- contact -->
-    <section id="contact" class="bg-black py-5">
-
-      <div class="container">
-
-        <p class="text-warning">
-          CONTACT
         </p>
 
-        <h2>
-          Contact Me
+
+        <h2 class="display-6 fw-bold">
+
+          My Toolkit
+
         </h2>
 
-        <p>
-          You can leave a message below.
+
+        <p class="text-secondary">
+
+          Things I currently know or am still learning.
+
         </p>
-
-
-        <form>
-
-          <div class="mb-3">
-
-            <label for="name" class="form-label">
-              Name
-            </label>
-
-            <input
-              type="text"
-              id="name"
-              class="form-control bg-dark text-white border-secondary"
-              placeholder="Name">
-
-          </div>
-
-
-          <div class="mb-3">
-
-            <label for="email" class="form-label">
-              Email
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              class="form-control bg-dark text-white border-secondary"
-              placeholder="Email">
-
-          </div>
-
-
-          <div class="mb-3">
-
-            <label for="msg" class="form-label">
-              Msg
-            </label>
-
-            <textarea
-              id="msg"
-              class="form-control bg-dark text-white border-secondary"
-              rows="4"
-              placeholder="Message"></textarea>
-
-          </div>
-
-
-          <button type="submit" class="btn btn-warning">
-            Send
-          </button>
-
-        </form>
 
 
         <div class="mt-4">
 
-          <a
-            href="https://www.linkedin.com/in/yshmael-jephthah-bigtas-24b93b435/"
-            target="_blank"
-            class="btn btn-primary">
 
-            LinkedIn
+          <span class="badge bg-warning text-dark fs-6 p-3 m-1">
 
-          </a>
+            <i class="bi bi-cup-hot"></i>
+            Java
+
+          </span>
+
+
+          <span class="badge bg-secondary fs-6 p-3 m-1">
+
+            <i class="bi bi-file-earmark-word"></i>
+            MS Word
+
+          </span>
+
+
+          <span class="badge bg-warning text-dark fs-6 p-3 m-1">
+
+            <i class="bi bi-pc-display"></i>
+            Basic Sys Dev
+
+          </span>
+
+
+          <span class="badge bg-secondary fs-6 p-3 m-1">
+
+            <i class="bi bi-filetype-html"></i>
+            HTML (WIP)
+
+          </span>
+
+
+          <span class="badge bg-warning text-dark fs-6 p-3 m-1">
+
+            <i class="bi bi-bootstrap"></i>
+            Bootstrap (WIP)
+
+          </span>
+
+
+          <span class="badge bg-secondary fs-6 p-3 m-1">
+
+            <i class="bi bi-github"></i>
+            GitHub (WIP)
+
+          </span>
+
 
         </div>
 
       </div>
 
     </section>
+
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section
+      id="projects"
+      class="bg-black py-5">
+
+
+      <div class="container py-4">
+
+
+        <p class="text-warning fw-bold mb-2">
+
+          <i class="bi bi-folder2-open"></i>
+          PROJ
+
+        </p>
+
+
+        <h2 class="display-6 fw-bold">
+
+          Projects & Achievements
+
+        </h2>
+
+
+        <p class="text-secondary">
+
+          Some projects and things I've completed.
+
+        </p>
+
+
+
+        <div class="row g-4 mt-3">
+
+
+          <!-- project 1 -->
+
+          <div class="col-12 col-md-6 col-lg-4">
+
+
+            <div class="card bg-dark text-white border-secondary h-100 shadow">
+
+
+              <div class="card-body d-flex flex-column">
+
+
+                <div class="mb-3">
+
+                  <i class="bi bi-box-seam fs-1 text-warning"></i>
+
+                </div>
+
+
+                <h3 class="h5 text-warning">
+
+                  Inventory Sys
+
+                </h3>
+
+
+                <p class="card-text">
+
+                  A basic inventory system I made for my
+                  finals in ACLC.
+
+                </p>
+
+
+                <div class="mt-auto">
+
+                  <a
+                    href="#"
+                    class="btn btn-warning">
+
+                    <i class="bi bi-eye"></i>
+                    View
+
+                  </a>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- project 2 -->
+
+          <div class="col-12 col-md-6 col-lg-4">
+
+
+            <div class="card bg-dark text-white border-secondary h-100 shadow">
+
+
+              <div class="card-body d-flex flex-column">
+
+
+                <div class="mb-3">
+
+                  <i class="bi bi-code-square fs-1 text-warning"></i>
+
+                </div>
+
+
+                <h3 class="h5 text-warning">
+
+                  Java Activities
+
+                </h3>
+
+
+                <p class="card-text">
+
+                  Some basic Java programs and coding activities
+                  that I made while learning Java.
+
+                </p>
+
+
+                <div class="mt-auto">
+
+                  <a
+                    href="#"
+                    class="btn btn-warning">
+
+                    <i class="bi bi-eye"></i>
+                    View
+
+                  </a>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- project 3 -->
+
+          <div class="col-12 col-md-6 col-lg-4">
+
+
+            <div class="card bg-dark text-white border-secondary h-100 shadow">
+
+
+              <div class="card-body d-flex flex-column">
+
+
+                <div class="mb-3">
+
+                  <i class="bi bi-mortarboard fs-1 text-warning"></i>
+
+                </div>
+
+
+                <h3 class="h5 text-warning">
+
+                  ACLC Grad
+
+                </h3>
+
+
+                <p class="card-text">
+
+                  I graduated from ACLC Antipolo where I learned
+                  basic ICT and computer skills.
+
+                </p>
+
+
+                <div class="mt-auto">
+
+                  <a
+                    href="#"
+                    class="btn btn-warning">
+
+                    <i class="bi bi-eye"></i>
+                    View
+
+                  </a>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section
+      id="experience"
+      class="container py-5">
+
+
+      <div class="py-4">
+
+
+        <p class="text-warning fw-bold mb-2">
+
+          <i class="bi bi-briefcase"></i>
+          EXP
+
+        </p>
+
+
+        <h2 class="display-6 fw-bold">
+
+          Work Exp
+
+        </h2>
+
+
+        <p class="text-secondary">
+
+          Some work I've experienced outside school.
+
+        </p>
+
+
+
+        <div class="row g-4 mt-3">
+
+
+          <div class="col-md-6">
+
+
+            <div class="card bg-dark text-white border-secondary h-100 shadow">
+
+
+              <div class="card-body">
+
+
+                <i class="bi bi-truck fs-1 text-warning"></i>
+
+
+                <h3 class="h5 text-warning mt-3">
+
+                  Delivery
+
+                </h3>
+
+
+                <p>
+
+                  I have experience doing delivery work.
+                  It's how I help our family business and
+                  earn extra money.
+
+                </p>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col-md-6">
+
+
+            <div class="card bg-dark text-white border-secondary h-100 shadow">
+
+
+              <div class="card-body">
+
+
+                <i class="bi bi-building-gear fs-1 text-warning"></i>
+
+
+                <h3 class="h5 text-warning mt-3">
+
+                  Construction
+
+                </h3>
+
+
+                <p>
+
+                  I worked as a truck helper or pahinante
+                  for around a year doing construction work
+                  for my Lola.
+
+                </p>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section
+      id="contact"
+      class="bg-black py-5">
+
+
+      <div class="container py-4">
+
+
+        <div class="row g-5">
+
+
+          <div class="col-lg-5">
+
+
+            <p class="text-warning fw-bold mb-2">
+
+              <i class="bi bi-envelope"></i>
+              CONTACT
+
+            </p>
+
+
+            <h2 class="display-6 fw-bold">
+
+              Contact Me
+
+            </h2>
+
+
+            <p class="text-secondary">
+
+              You can leave a message below or check
+              my GitHub and LinkedIn.
+
+            </p>
+
+
+
+            <div class="mt-4">
+
+
+              <a
+                href="https://github.com/yshmaeljephthahbigtas-spec"
+                target="_blank"
+                class="btn btn-outline-light me-2">
+
+                <i class="bi bi-github"></i>
+                GitHub
+
+              </a>
+
+
+              <a
+                href="https://www.linkedin.com/in/yshmael-jephthah-bigtas-24b93b435/"
+                target="_blank"
+                class="btn btn-primary">
+
+                <i class="bi bi-linkedin"></i>
+                LinkedIn
+
+              </a>
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col-lg-7">
+
+
+            <form>
+
+
+              <div class="mb-3">
+
+
+                <label
+                  for="name"
+                  class="form-label">
+
+                  Name
+
+                </label>
+
+
+                <div class="input-group">
+
+
+                  <span class="input-group-text">
+
+                    <i class="bi bi-person"></i>
+
+                  </span>
+
+
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control bg-dark text-white border-secondary"
+                    placeholder="Name">
+
+
+                </div>
+
+              </div>
+
+
+
+              <div class="mb-3">
+
+
+                <label
+                  for="email"
+                  class="form-label">
+
+                  Email
+
+                </label>
+
+
+                <div class="input-group">
+
+
+                  <span class="input-group-text">
+
+                    <i class="bi bi-envelope"></i>
+
+                  </span>
+
+
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control bg-dark text-white border-secondary"
+                    placeholder="Email">
+
+
+                </div>
+
+              </div>
+
+
+
+              <div class="mb-3">
+
+
+                <label
+                  for="msg"
+                  class="form-label">
+
+                  Msg
+
+                </label>
+
+
+                <textarea
+                  id="msg"
+                  class="form-control bg-dark text-white border-secondary"
+                  rows="5"
+                  placeholder="Message"></textarea>
+
+
+              </div>
+
+
+
+              <button
+                type="submit"
+                class="btn btn-warning">
+
+
+                <i class="bi bi-send"></i>
+                Send
+
+
+              </button>
+
+
+            </form>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
 
   </main>
 
 
 
-  <!-- footer -->
-  <footer class="bg-dark text-center py-4">
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="bg-dark text-center border-top border-secondary py-4">
+
 
     <div class="container">
 
-      <p class="text-warning">
+
+      <p class="text-warning fw-bold">
+
         Yshmael Jephthah Bigtas
+
       </p>
+
 
 
       <a
@@ -511,9 +992,11 @@ REMINDERS
         target="_blank"
         class="btn btn-outline-light btn-sm m-1">
 
+        <i class="bi bi-github"></i>
         GitHub
 
       </a>
+
 
 
       <a
@@ -521,22 +1004,32 @@ REMINDERS
         target="_blank"
         class="btn btn-outline-warning btn-sm m-1">
 
+        <i class="bi bi-linkedin"></i>
         LinkedIn
 
       </a>
 
 
+
       <p class="text-secondary mt-3 mb-0">
+
         © 2026 Yshmael Bigtas
+
       </p>
+
 
     </div>
 
   </footer>
 
 
+
   <!-- bootstrap js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
 
 </body>
 
